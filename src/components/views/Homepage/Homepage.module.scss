@@ -2,3 +2,44 @@
 
 // .root {
 // }
+
+.root {
+  margin-top: 64px;
+  .InfoHolder {
+    position: relative;
+    height: 530px;
+    border-radius: 20%;
+    margin-top: 55px;
+    .image {
+        position: absolute;
+        height: 100%;
+        width: 100%;
+        opacity: 0.2;
+        &:hover {
+            opacity: 0.7;
+            transition: all 2s ease-in-out;
+        }
+    }
+
+    .Title {
+      font-weight: bolder;
+      font-size: 47px;
+      font-family: $text-font;
+      color: $text-color-dark;
+      text-align: center;
+      opacity: 1;
+      .pillsIcon {
+        font-size: 40px;
+        text-align: center;
+        color: crimson;
+      }
+    }
+    .Subtitle {
+      font-family: $text-font;
+      font-size: 29px;
+      font-weight: normal;
+      color: $text-color-dark;
+      text-align: center;
+    }
+}
+}
