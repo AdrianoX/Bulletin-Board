@@ -14,12 +14,6 @@ import { Grid } from '@material-ui/core';
 
 import styles from './Homepage.module.scss';
 
-// const Component = ({className, children}) => (
-//   <div className={clsx(className, styles.root)}>
-//     <h2>Homepage</h2>
-//     {children}
-//   </div>
-// );
 
 const Component = ({className}) => (
   <Container className={clsx(className, styles.root)}>
