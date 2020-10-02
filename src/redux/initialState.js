@@ -1,7 +1,7 @@
 export const initialState = {
   // posts: {
   //   data: {},
-  cathegories: [
+  divisions: [
     { id: 'pills', name: 'Pills' },
     { id: 'ecstasy', name: 'Ecstasy' },
     { id: 'cannabis', name: 'Cannabis' },
