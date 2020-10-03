@@ -20,7 +20,13 @@ const Component = () => (
   // <div className={clsx(className, styles.root)}>
   <AppBar className={styles.AppBar}>
     <Toolbar className={styles.toolbar}>
-      <Button edge="start" startIcon= {<FingerprintIcon />} className={styles.menuButton} color="inherit" aria-label="shopping_cart">
+      <Button
+        edge="start"
+        startIcon= {<FingerprintIcon />}
+        className={styles.menuButton}
+        color="inherit"
+        aria-label="shopping_cart">
+
         <Link to = '/drugs-info'
           className={styles.login}>
                 Welcome stranger ...
@@ -34,11 +40,15 @@ const Component = () => (
         MyDrugs
 
       </Typography>
-      <Button className={styles.shop} color="inherit" startIcon= {<ShoppingCartIcon />}>
+      <Button
+        className={styles.shop}
+        color="inherit"
+        startIcon= {<ShoppingCartIcon />}>
+
         <Link
           to="/store_card"
-          className={styles.login}
-        > Store
+          className={styles.login}>
+           Store
         </Link>
       </Button>
     </Toolbar>
