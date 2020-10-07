@@ -9,7 +9,7 @@ import { reducer as optionReducer } from './optionRedux';
 import { reducer as cartReducer } from './cartRedux';
 // define reducers
 const reducers = {
-  gifts: drugsReducer,
+  drugs: drugsReducer,
   categories: categoriesReducer,
   options: optionReducer,
   cart: cartReducer,

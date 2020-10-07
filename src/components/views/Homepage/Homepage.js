@@ -26,7 +26,7 @@ const Component = ({className, categories, children}) => (
       justify="space-evenly"
       alignItems="center">
       {/* <Grid item xs={12} sm={6}>
-        <img className={styles.image} src={image} alt="gift"/>
+        <img className={styles.image} src={image} alt="drug"/>
       </Grid> */}
       <Grid item xs={12} sm={12}
         className={styles.TextBox}>
