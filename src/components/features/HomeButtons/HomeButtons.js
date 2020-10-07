@@ -4,8 +4,7 @@ import { NavLink } from 'react-router-dom';
 import clsx from 'clsx';
 import styles from './HomeButtons.module.scss';
 import { Grid } from '@material-ui/core';
-//import { connect } from 'react-redux';
-//import { getCategories } from '../../../redux/categoriesRedux';
+
 
 const Component = ({className, categories}) => (
   <div className={clsx(className, styles.root)}>
