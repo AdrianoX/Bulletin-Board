@@ -2,58 +2,52 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import { Link } from 'react-router-dom';
 import styles from './Header.module.scss';
-import Toolbar from '@material-ui/core/Toolbar';
+
 import AppBar from '@material-ui/core/AppBar';
-import Button from '@material-ui/core/Button';
+import Toolbar from '@material-ui/core/Toolbar';
 import Typography from '@material-ui/core/Typography';
-import ShoppingCartIcon from '@material-ui/icons/ShoppingCart';
+import Button from '@material-ui/core/Button';
+
 import FingerprintIcon from '@material-ui/icons/Fingerprint';
-
-// import clsx from 'clsx';
-
+import AddShoppingCartIcon from '@material-ui/icons/AddShoppingCart';
 // import { connect } from 'react-redux';
 // import { reduxSelector, reduxActionCreator } from '../../../redux/exampleRedux.js';
 
-// import styles from './Header.module.scss';
-
 const Component = () => (
-  // <div className={clsx(className, styles.root)}>
   <AppBar className={styles.AppBar}>
     <Toolbar className={styles.toolbar}>
       <Button
         edge="start"
-        startIcon= {<FingerprintIcon />}
+        startIcon={<FingerprintIcon />}
         className={styles.menuButton}
         color="inherit"
-        aria-label="shopping_cart">
+        aria-label="menu"
+      >
+        <Link to="/my-posts" className={styles.login}>
+          Mysterious button...
 
-        <Link to = '/drugs-info'
-          className={styles.login}>
-                Welcome stranger ...
         </Link>
+        {<FingerprintIcon />}
       </Button>
-      <Typography
-        align='center'
-        variant='h3'
-        className={styles.main_title}>
-
-        MyDrugs
-
-      </Typography>
+      <Link to="/" className={styles.login}>
+        <Typography
+          align="center"
+          variant="h4"
+          className={styles.brand}>
+          MyDrugs
+        </Typography>
+      </Link>
       <Button
         className={styles.shop}
         color="inherit"
-        startIcon= {<ShoppingCartIcon />}>
-
-        <Link
-          to="/store_card"
-          className={styles.login}>
-           Store
+        startIcon={<AddShoppingCartIcon />}
+      >
+        <Link to="/client" className={styles.login}>
+          Store
         </Link>
       </Button>
     </Toolbar>
   </AppBar>
-  // </div>
 );
 
 Component.propTypes = {
