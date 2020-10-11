@@ -27,14 +27,22 @@
       position: absolute;
       border-radius: 5%;
       height: 100%;
-      width: 100%;
+      // width: 100%;
+      left: -232px;
       opacity: 0.2;
       &:hover {
-        opacity: 1;
-        transition: all 1.5s ease-in-out;
+        opacity: 0.6;
+        transition: all 1s ease-in-out;
       }
     }
-
+    &:hover .Maintext {
+      color: $text-color-light;
+      transition: all 1s ease-in-out;
+    }
+    &:hover .Subtext {
+      color: $text-color-light;
+      transition: all 1s ease-in-out;
+    }
     .Maintext {
       font-family: $logo-font;
       font-weight: bolder;
@@ -43,9 +51,10 @@
       margin-top: 150px;
       text-align: center;
       opacity: 1;
+      text-decoration: none;
       .heart {
         font-size: 35px;
-        color: crimson;
+        color: coral;
       }
     }
     .Subtext {
@@ -55,27 +64,26 @@
       color: $text-color-dark;
       text-align: center;
     }
+    .Gift {
+      font-size: 45px;
+      text-align: center;
+    }
   }
   .Box {
     display: flex;
     justify-content: flex-end;
   }
-  .imageButton {
-    height: 350px;
-    width: 100%;
-    object-fit: cover;
-  }
-  .textButton {
-    position: absolute;
-    text-decoration: none;
-    color: $text-color-light;
-    font-family: $logo-font;
-    font-size: 55px;
-    margin-top: 150px;
-    margin-right: 1rem;
-  }
-  .link {
-    width: 45%;
-    margin: 1.5rem 0;
+
+  @media (max-width: 768px) {
+    .TextBox {
+      height: 400px;
+
+      .Maintext {
+        font-size: 30px;
+      }
+      .Subtext {
+        font-size: 20px;
+      }
+    }
   }
 }

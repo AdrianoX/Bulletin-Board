@@ -4,13 +4,13 @@ import { composeWithDevTools } from 'redux-devtools-extension';
 
 import { initialState } from './initialState';
 import { reducer as drugsReducer } from './drugsRedux';
-import { reducer as categoriesReducer } from './categoriesRedux';
+// import { reducer as categoriesReducer } from './categoriesRedux';
 import { reducer as optionReducer } from './optionRedux';
 import { reducer as cartReducer } from './cartRedux';
 // define reducers
 const reducers = {
   drugs: drugsReducer,
-  categories: categoriesReducer,
+  // categories: categoriesReducer,
   options: optionReducer,
   cart: cartReducer,
 };

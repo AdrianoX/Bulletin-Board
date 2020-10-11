@@ -1,112 +1,125 @@
 [
   {
-      "_id": 1,
-      "name": "candies jar",
-      "option": "Jar with macaron",
-      "image": "https://i.postimg.cc/fTvpdGnf/macaron-jar.jpg",
-      "description": "Macarons are a butter-creamed filled cookie sandwich that  transport you to a cobbled street in Paris with one taste. They are magical, dainty, chic, stylish and delicious in equal measure.",
-      "price": 25,
-      "rate": 4,
-      "category": "mood",
-      "productSelect": "Select favourite flavour"
+    "_id": {
+      "$oid": "5f82d98dc598fc0bff3b781a"
     },
-    {
-      "_id": 2,
-      "name": "candies jar",
-      "option": "Jar with caramels",
-      "image": "https://i.postimg.cc/T1fQYPwM/caramels-jar.jpg",
-      "description": "SOFT, CREAMY, BUTTERY TEXTURE – Individually wrapped high quality caramel means a soft bite that doesn’t stick to your teeth.",
-      "price": 25,
-      "rate": 4,
-      "category": "mood",
-      "productSelect": "Select favourite flavour"
+    "name": "Magic Pills",
+    "option": "small_pills",
+    "categoryimg": "https://i.postimg.cc/zfddyrV6/13up-health-opioids1-medium-Square-At3-X.jpg",
+    "description": "Evrything what you need to know about 'Small  pills' - check here !",
+    "price": 150,
+    "rate": 1,
+    "category": "pills",
+    "categoryName": "Only best Pills !",
+    "categoryImg": "https://i.postimg.cc/VvqRrQ1H/R3ak9ku-TURBXy8w-YWFh-Nz-Zi-My0x-Zj-Vj-LTRm-ZTAt-OWQw-Ni03-Zm-Ew-MGYw-MDc5-NDkuan-Bl-Z5-GVAs0-DBw-DDw4-Gh-MAE.jpg",
+    "productSelect": "Type your choose..."
+  },
+  {
+    "_id": {
+      "$oid": "5f82d98dc598fc0bff3b781b"
     },
-    {
-      "_id": 3,
-      "name": "candies jar",
-      "option": "Jar with chocolates",
-      "image": "https://i.postimg.cc/K8k7bTN3/chocolates-jar.jpg",
-      "description": "The dark mouth melting chocolate with crackling hazelnuts under your teeth. leaves you with a irresistible taste of heaven smells sweeter then honey , tempting you to eat more and more!",
-      "price": 25,
-      "rate": 4,
-      "category": "mood",
-      "productSelect": "Select favourite flavour"
+    "name": "Magic Pills",
+    "option": "medium_pills",
+    "image": "https://i.postimg.cc/m2M68J51/tablets-1.jpg",
+    "description": "Evrything what you need to know about 'Medium  pills' - check here !",
+    "price": 150,
+    "rate": 1,
+    "category": "pills",
+    "productSelect": "Type your choose..."
+  },
+  {
+    "_id": {
+      "$oid": "5f82d98dc598fc0bff3b781c"
     },
-    {
-      "_id": 4,
-      "name": "A unique story gift to inspire your loved ones",
-      "option": "Inspire",
-      "image": "https://i.postimg.cc/PqNZsvdv/388226-PC4-CEW-583.jpg",
-      "description": "Vulputate suspendisse arcu accumsan eu adipiscing quam vehicula dictumst a cras leo in cursus platea scelerisque nisi inceptos nam. Interdum a a nec ut scelerisque suspendisse cras aenean mollis a integer porta a a nisl.",
-      "price": 25,
-      "rate": 4,
-      "category": "soul",
-      "productSelect": "Select story title"
+    "name": "Magic Pills",
+    "option": "large_pills",
+    "image": "https://i.postimg.cc/66FmVtYN/original-1.jpg",
+    "description": "Evrything what you need to know about 'Large  pills' - check here !",
+    "price": 150,
+    "rate": 1,
+    "category": "pills",
+    "productSelect": "Type your choose..."
+  },
+  {
+    "_id": {
+      "$oid": "5f82d98dc598fc0bff3b781d"
     },
-    {
-      "_id": 5,
-      "name": "Stories for those who do not care about our planet",
-      "option": "Planet Care",
-      "image": "https://i.postimg.cc/5NzRJDKm/planet.jpg",
-      "description": "Conubia condimentum sociis gravida rutrum platea odio non commodo integer vestibulum maecenas condimentum ultricies a a. Aliquet rutrum a est consequat arcu a nostra a tortor a nibh nibh a laoreet facilisi.",
-      "price": 25,
-      "rate": 4,
-      "category": "soul",
-      "productSelect": "Select story title"
+    "name": "Best of excstasy   : )",
+    "option": "begginers_excstasy",
+    "image": "https://i.postimg.cc/ZnPpy8wn/IAD-mdma3-Hcrop-072719.jpg",
+    "description": "Evrything what you need to know about 'begginers_excstasy' - check here !",
+    "price": 100,
+    "rate": 2,
+    "category": "ecstasy",
+    "categoryName": "100% oryginal Ecstasy !",
+    "categoryImg": "https://i.postimg.cc/XYQskb5R/nintchdbpict000254677956.jpg",
+    "productSelect": "Type your choose..."
+  },
+  {
+    "_id": {
+      "$oid": "5f82d98dc598fc0bff3b781e"
     },
-    {
-      "_id": 6,
-      "name": "Stories about love and wisdom",
-      "option": "Value of life",
-      "image": "https://i.postimg.cc/X79QmdXH/life.jpg",
-      "description": "Ullamcorper suscipit porttitor condimentum cursus risus taciti curae suspendisse ad nullam parturient habitasse gravida vestibulum turpis dis est. Tristique sapien ipsum congue dictumst ante ac taci.",
-      "price": 25,
-      "rate": 4,
-      "category": "soul",
-      "productSelect": "Select story title"
+    "name": "Best of excstasy   : )",
+    "option": "advanced_excstasy",
+    "image": "https://i.postimg.cc/8kLh3GTG/comment-1592823813-Ai-NKO80jx2vx-E0ipi-Nxdg-D.jpg",
+    "description": "'Evrything what you need to know about 'advanced_excstasy' - check here !",
+    "price": 100,
+    "rate": 2,
+    "category": "ecstasy",
+    "productSelect": "Type your choose..."
+  },
+  {
+    "_id": {
+      "$oid": "5f82d98dc598fc0bff3b781f"
     },
-    {
-      "_id": 7,
-      "name": "Magic stories with dedication",
-      "option": "For young readers",
-      "image": "https://i.postimg.cc/rmSpj2rh/2135.jpg",
-      "description": "A leo malesuada aenean porta pretium iaculis dui quisque consectetur ipsum vestibulum vestibulum nisl nunc tincidunt.",
-      "price": 25,
-      "rate": 4,
-      "category": "soul",
-      "productSelect": "Select story title"
+    "name": "Best of excstasy   : )",
+    "option": "ultra-advanced_excstasy",
+    "image": "https://i.postimg.cc/T33gpWg2/ups-ecstasy-pills-ravejungle.jpg",
+    "description": "Evrything what you need to know about 'ultra-advanced_excstasy' - check here !",
+    "price": 100,
+    "rate": 2,
+    "category": "ecstasy",
+    "productSelect": "Type your choose..."
+  },
+  {
+    "_id": {
+      "$oid": "5f82d98dc598fc0bff3b7820"
     },
-    {
-      "_id": 8,
-      "name": "SPA",
-      "option": "Natural soap",
-      "image": "https://i.postimg.cc/kXxLKB3S/3728.jpg",
-      "description": "A cras suspendisse est a potenti sagittis lobortis parturient porta est erat nec facilisis integer inceptos torquent hendrerit.",
-      "price": 25,
-      "rate": 4,
-      "category": "body",
-      "productSelect": "Select fragrance"
+    "name": "Best of Cannabis",
+    "option": "ultra_trip",
+    "image": "https://i.postimg.cc/7685MCG2/4840-jar-cannabis-1200x628-facebook.jpg",
+    "description": "Evrything what you need to know about 'Ultra_Trip' - check here !",
+    "price": 120,
+    "rate": 3,
+    "category": "cannabis",
+    "categoryName": "Best kind of Cannabis !",
+    "categoryImg": "https://i.postimg.cc/bYBVK8Fp/photo-1558010089-ff6fd29ea39a.jpg",
+    "productSelect": "Type your choose..."
+  },
+  {
+    "_id": {
+      "$oid": "5f82d98dc598fc0bff3b7821"
     },
-    {
-      "_id": 9,
-      "name": "SPA",
-      "option": "Natural oils and creams",
-      "image": "https://i.postimg.cc/5thRXC9D/spa.jpg",
-      "description": "A a a conubia auctor ante mauris hac ullamcorper potenti sed fames commodo condimentum orci sit magna urna feugiat vestibulum in pharetra nibh parturient.",
-      "price": 25,
-      "rate": 4,
-      "category": "body",
-      "productSelect": "Select fragrance"
+    "name": "Best of Cannabis",
+    "option": "weird-adventure",
+    "image": "https://i.postimg.cc/x89qhWPj/weedg829446642-1507837.jpg",
+    "description": "Evrything what you need to know about 'Weird_adventure' - check here !",
+    "price": 120,
+    "rate": 3,
+    "category": "cannabis",
+    "productSelect": "Type your choose..."
+  },
+  {
+    "_id": {
+      "$oid": "5f82d98dc598fc0bff3b7822"
     },
-    {
-      "_id": 10,
-      "name": "SPA",
-      "option": "Body scrub",
-      "image": "https://i.postimg.cc/8PWk80n6/8858.jpg",
-      "description": "Rutrum at consectetur ullamcorper vestibulum consectetur vivamus adipiscing tincidunt eu lacus a dis suspendisse tristique habitant fermentum metus ultricies magnis enim curae nascetur.",
-      "price": 25,
-      "rate": 4,
-      "category": "body",
-      "productSelect": "Select fragrance"
+    "name": "Best of Cannabis",
+    "option": "be_carefful",
+    "image": "https://i.postimg.cc/xdbkzGCQ/cannabis-use-web-824x550.jpg",
+    "description": "Evrything what you need to know about 'Be carefful' - check here !",
+    "price": 120,
+    "rate": 3,
+    "category": "cannabis",
+    "productSelect": "Type your choose..."
   }
 ]
