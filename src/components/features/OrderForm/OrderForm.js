@@ -4,7 +4,7 @@ import Grid from '@material-ui/core/Grid';
 import { connect } from 'react-redux';
 import { getCart, getTotalPrice, newOrderRequest } from '../../../redux/cartRedux.js';
 import Button from '@material-ui/core/Button';
-import { unmountAfterDelay } from '../../../HOC/unmountAfterDelay/unmountAfterDelay';
+import { unmountAfterDelay } from '../../../HOC/unmountAfterDelay.js/unmountAfterDelay';
 import { withRouter } from 'react-router-dom';
 import styles from './OrderForm.module.scss';
 import { Popup } from '../Popup/Popup';
@@ -30,7 +30,7 @@ class Component extends React.Component {
     history: PropTypes.object,
   }
 
-  submitOrder = (event, drug, total) => {
+  submitOrder = (event, drugs, total) => {
     const { firstName, lastName, email, address, place, postCode } = this.state.client;
     const { sendOrder } = this.props;
     event.preventDefault();
@@ -41,7 +41,7 @@ class Component extends React.Component {
 
     let error = null;
     if (!firstName || !lastName || !email || !address || !place || !postCode) error = 'Fill in all required fields';
-    else if (!drug.length) error = 'Your shoping basket is empty';
+    else if (!drugs.length) error = 'Your shoping basket is empty';
     else if (!total) error = 'Your shoping basket is empty';
     else if (!validEmail.test(email)) error = 'Invalid e-mail address';
     else if (!validAddress.test(address)) error = 'Invalid address';
@@ -49,7 +49,7 @@ class Component extends React.Component {
 
     if (!error) {
 
-      const productsData = drug.map(drug => (
+      const productsData = drugs.map(drug => (
         {
           _id: drug._id,
           amount: drug.amount,
@@ -58,7 +58,7 @@ class Component extends React.Component {
       ));
 
       const payload = {
-        drug: productsData,
+        drugs: productsData,
         client: this.state.client,
         total: total,
       };
@@ -95,7 +95,7 @@ class Component extends React.Component {
     const { cart, total } = this.props;
     return (
       <div className={styles.root}>
-        <form noValidate onSubmit={e => submitOrder(e, cart.drug, total)}>
+        <form noValidate onSubmit={e => submitOrder(e, cart.drugs, total)}>
           {error ? <DelayedPopup variant='danger'>{error}</DelayedPopup> : null}
 
           <Grid container>

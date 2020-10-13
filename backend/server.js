@@ -35,9 +35,7 @@ app.use('*', (req, res) => {
 });
 
 /* MONGOOSE */
-process.env.NODE_ENV === 'production' ?
-  mongoose.connect('mongodb+srv://AdrianoXXX:Adri@n87==@cluster0.6d47y.mongodb.net/my-drugs?retryWrites=true&w=majority', { useNewUrlParser: true, useUnifiedTopology: true }) :
-  mongoose.connect('mongodb://localhost:27017/my-drugs', { useNewUrlParser: true, useUnifiedTopology: true });
+mongoose.connect('mongodb://localhost:27017/my-drugs', { useNewUrlParser: true, useUnifiedTopology: true });
 const db = mongoose.connection;
 
 db.once('open', () => {
