@@ -15,15 +15,11 @@ import styles from './Homepage.module.scss';
 import { Grid } from '@material-ui/core';
 
 class Component extends React.Component {
-  static propTypes = {
-    children: PropTypes.node,
-    className: PropTypes.string,
-    drugs: PropTypes.array,
-    loadProduct: PropTypes.func,
-  };
+
 
   componentDidMount() {
-    this.props.loadProduct();
+    const { loadProduct } = this.props;
+    loadProduct();
   }
   render() {
     const { className, drugs } = this.props;
@@ -39,7 +35,7 @@ class Component extends React.Component {
           {/* <Grid item xs={12} sm={6}>
             <img className={styles.leftImage} src={image} alt="drug" />
           </Grid> */}
-          <Grid item xs={12} sm={6} className={styles.TextBox}>
+          <Grid item xs={12} sm={12} className={styles.TextBox}>
             <img className={styles.image} src={image2} alt="sweets" />
             <h2 className={styles.Maintext}>
               Best drugs ...
@@ -56,6 +52,12 @@ class Component extends React.Component {
     );
   }
 }
+
+Component.propTypes = {
+  drugs: PropTypes.array,
+  className: PropTypes.string,
+  loadProduct: PropTypes.func,
+};
 
 const mapStateToProps = (state) => ({
   drugs: getAll(state),

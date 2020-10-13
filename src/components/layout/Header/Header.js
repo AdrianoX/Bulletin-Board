@@ -2,28 +2,28 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import { Link } from 'react-router-dom';
 import styles from './Header.module.scss';
-// import { Cart } from '../../features/Cart/Cart';
+import { Cart } from '../../features/Cart/Cart';
 
 import AppBar from '@material-ui/core/AppBar';
 import Toolbar from '@material-ui/core/Toolbar';
 import Typography from '@material-ui/core/Typography';
 import Button from '@material-ui/core/Button';
 
-// import manageCartStorageHOC from '../../../HOC/manageCartStorage.js/manageCartStorage';
+import manageCartStorageHOC from '../../../HOC/manageCartStorage.js/manageCartStorage';
 
 
-import FingerprintIcon from '@material-ui/icons/Fingerprint';
+// import FingerprintIcon from '@material-ui/icons/Fingerprint';
 // import AddShoppingCartIcon from '@material-ui/icons/AddShoppingCart';
 // import { connect } from 'react-redux';
 // import { reduxSelector, reduxActionCreator } from '../../../redux/exampleRedux.js';
 
-// const CartWithStorageMngmt = manageCartStorageHOC(Cart);
+const CartWithStorageMngmt = manageCartStorageHOC(Cart);
 
 const Component = () => {
   return (
     <AppBar className={styles.AppBar}>
       <Toolbar className={styles.toolbar}>
-        <Button
+        {/* <Button
           edge="start"
           startIcon={<FingerprintIcon />}
           className={styles.menuButton}
@@ -34,7 +34,7 @@ const Component = () => {
           Mysterious button...
           </Link>
           {<FingerprintIcon />}
-        </Button>
+        </Button> */}
         <Link to="/" className={styles.login}>
           <Typography
             align="center"
@@ -43,7 +43,7 @@ const Component = () => {
           MyDrugs
           </Typography>
         </Link>
-        {/* <CartWithStorageMngmt /> */}
+        <CartWithStorageMngmt />
       </Toolbar>
     </AppBar>
   );

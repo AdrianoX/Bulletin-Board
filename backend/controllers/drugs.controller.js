@@ -14,7 +14,7 @@ exports.getAll = async (req, res) => {
 exports.getById = async (req, res) => {
   try {
     const result = await Drugs
-      .find({ option: req.params.id});
+      .find({ _id: req.params.id});
     if(!result) res.status(404).json({ drug: 'Not found' });
     else res.json(result);
   }

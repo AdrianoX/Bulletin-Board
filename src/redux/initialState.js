@@ -1,15 +1,15 @@
 export const initialState = {
-  category: [
-    { id: 'pills',
-      name: 'Only best Pills !',
-      image: 'https://i.postimg.cc/VvqRrQ1H/R3ak9ku-TURBXy8w-YWFh-Nz-Zi-My0x-Zj-Vj-LTRm-ZTAt-OWQw-Ni03-Zm-Ew-MGYw-MDc5-NDkuan-Bl-Z5-GVAs0-DBw-DDw4-Gh-MAE.jpg' },
-    { id: 'ecstasy',
-      name: '100% oryginal Ecstasy',
-      image: 'https://i.postimg.cc/XYQskb5R/nintchdbpict000254677956.jpg' },
-    { id: 'cannabis',
-      name: 'Best kind of Cannabis',
-      image: 'https://i.postimg.cc/bYBVK8Fp/photo-1558010089-ff6fd29ea39a.jpg' },
-  ],
+  // category: [
+  //   { id: 'pills',
+  //     name: 'Only best Pills !',
+  //     image: 'https://i.postimg.cc/VvqRrQ1H/R3ak9ku-TURBXy8w-YWFh-Nz-Zi-My0x-Zj-Vj-LTRm-ZTAt-OWQw-Ni03-Zm-Ew-MGYw-MDc5-NDkuan-Bl-Z5-GVAs0-DBw-DDw4-Gh-MAE.jpg' },
+  //   { id: 'ecstasy',
+  //     name: '100% oryginal Ecstasy',
+  //     image: 'https://i.postimg.cc/XYQskb5R/nintchdbpict000254677956.jpg' },
+  //   { id: 'cannabis',
+  //     name: 'Best kind of Cannabis',
+  //     image: 'https://i.postimg.cc/bYBVK8Fp/photo-1558010089-ff6fd29ea39a.jpg' },
+  // ],
 
   options: {
     data: [
@@ -109,7 +109,7 @@ export const initialState = {
         _id: '1',
         name: 'Magic Pills',
         option: 'small_pills',
-        categoryimg: 'https://i.postimg.cc/zfddyrV6/13up-health-opioids1-medium-Square-At3-X.jpg',
+        image: 'https://i.postimg.cc/zfddyrV6/13up-health-opioids1-medium-Square-At3-X.jpg',
         description: 'Evrything what you need to know about "Small  pills" - check here !',
         price: 150,
         rate: 1,

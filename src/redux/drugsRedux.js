@@ -1,6 +1,7 @@
 import axios from 'axios';
 
-export const API_URL = (process.env.NODE_ENV === 'production') ? '/api' : 'http://localhost:8000/api';
+// export const API_URL = (process.env.NODE_ENV === 'production') ? '/api' : 'http://localhost:8000/api';
+import {API_URL} from '../config';
 
 /* selectors */
 export const getAll = ({drugs}) => drugs.data;
@@ -37,15 +38,11 @@ export const fetchDrugtById = payload => ({ payload, type: FETCH_DRUGS_BY_ID });
 
 /* thunk creators */
 export const fetchPublished = () => {
-  return (dispatch, getState) => {
+  return async dispatch => {
+    dispatch(fetchStarted());
     try {
-      const { drugs } = getState();
-      if (!drugs.data.length || drugs.loading.active === false) {
-        dispatch(fetchStarted());
-        axios.get(`${API_URL}/drugs`).then((res) => {
-          dispatch(fetchSuccess(res.data));
-        });
-      }
+      let res = await axios.get(`${API_URL}/drugs`);
+      dispatch(fetchSuccess(res.data));
     } catch (err) {
       dispatch(fetchError(err.message || true));
     }
