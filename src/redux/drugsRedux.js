@@ -8,13 +8,11 @@ export const getAll = ({drugs}) => drugs.data;
 
 export const getDrugsByCategory = ({ drugs }, id ) => {
   const categoryDrugs = drugs.data.filter(drug => drug.category === id);
-  console.log(categoryDrugs);
   return categoryDrugs;
 };
 
 export const getDrugByOption = ({drugs}, id) => {
   const drug = drugs.data.filter(drug => drug.option === id);
-  console.log(drug);
   return drug.length ? drug[0] : { error: true };
 };
 

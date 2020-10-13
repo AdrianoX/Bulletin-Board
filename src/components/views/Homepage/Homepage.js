@@ -1,4 +1,3 @@
-
 import React from 'react';
 import PropTypes from 'prop-types';
 import { HomeButtons } from '../../features/HomeButtons/HomeButtons';
@@ -7,7 +6,6 @@ import clsx from 'clsx';
 import image2 from '../../images/11.jpg';
 import Divider from '@material-ui/core/Divider';
 import WhatshotIcon from '@material-ui/icons/Whatshot';
-
 import { connect } from 'react-redux';
 import { getAll } from '../../../redux/drugsRedux';
 import { fetchPublished } from '../../../redux/drugsRedux';

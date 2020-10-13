@@ -1,8 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-
 import clsx from 'clsx';
-
 import { connect } from 'react-redux';
 import { getDrugsByCategory, fetchPublished } from '../../../redux/drugsRedux.js';
 import styles from './Products.module.scss';

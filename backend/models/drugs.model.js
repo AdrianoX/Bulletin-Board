@@ -10,6 +10,7 @@ const drugsSchema = new mongoose.Schema({
   rate: { type: Number },
   category: { type: String, required: true },
   categoryName: { type: String },
+  categoryImg: { type: String },
   productSelect: { type: String },
 
 });

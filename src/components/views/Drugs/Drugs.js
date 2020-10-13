@@ -115,7 +115,7 @@ class Component extends React.Component  {
 
 const mapStateToProps = (state, props) => ({
   // eslint-disable-next-line indent
-    drug: getDrugByOption(state,  props.match.params.id),
+  drug: getDrugByOption(state,  props.match.params.id),
   options: getOptionsByProducts(state, props.match.params.id),
 });
 
