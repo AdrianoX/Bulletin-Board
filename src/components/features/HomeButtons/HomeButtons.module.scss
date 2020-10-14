@@ -2,17 +2,26 @@
 
 .root {
   .Box {
+    color: red;
     display: flex;
     justify-content: flex-end;
     background-color: black;
+    border: 10px solid #247BA0;
     &:hover .imageButton{
         opacity: 0.5;
         transition: all 0.5s ease-in-out;
+        -webkit-animation: swing 1s ease;
+        animation: swing 1s ease;
+        -webkit-animation-iteration-count: 1;
+        animation-iteration-count: 1;
     }
 
     &:hover .textButton {
-        border: 2px solid $text-color-light;
+        border: 5px solid $text-color-light;
         transition: all 0.5s ease-in-out;
+        border-color: #FF1654;
+
+
     }
   }
 
@@ -33,12 +42,18 @@
     text-decoration: none;
     color: $text-color-light;
     font-family: $logo-font;
-    font-size: 50px;
+    font-size: 40px;
     margin-top: 150px;
     margin-right: 1rem;
     border: 2px solid transparent;
     &:hover {
         background-color: transparentize($color: $text-color-dark, $amount: 0.1);
+        -webkit-animation: swing 1s ease;
+        animation: swing 1s ease;
+        -webkit-animation-iteration-count: 1;
+        animation-iteration-count: 1;
+
+
     }
   }
 
@@ -51,3 +66,69 @@
     width: 100%;
   }
 }
+@-webkit-keyframes swing
+ {
+     15%
+     {
+         -webkit-transform: translateX(5px);
+         transform: translateX(5px);
+     }
+     30%
+     {
+         -webkit-transform: translateX(-5px);
+        transform: translateX(-5px);
+     }
+     50%
+     {
+         -webkit-transform: translateX(3px);
+         transform: translateX(3px);
+     }
+     65%
+     {
+         -webkit-transform: translateX(-3px);
+         transform: translateX(-3px);
+     }
+     80%
+     {
+         -webkit-transform: translateX(2px);
+         transform: translateX(2px);
+     }
+     100%
+     {
+         -webkit-transform: translateX(0);
+         transform: translateX(0);
+     }
+ }
+ @keyframes swing
+ {
+     15%
+     {
+         -webkit-transform: translateX(5px);
+         transform: translateX(5px);
+     }
+     30%
+     {
+         -webkit-transform: translateX(-5px);
+         transform: translateX(-5px);
+     }
+     50%
+     {
+         -webkit-transform: translateX(3px);
+         transform: translateX(3px);
+     }
+     65%
+     {
+         -webkit-transform: translateX(-3px);
+         transform: translateX(-3px);
+     }
+     80%
+     {
+         -webkit-transform: translateX(2px);
+         transform: translateX(2px);
+     }
+     100%
+     {
+         -webkit-transform: translateX(0);
+         transform: translateX(0);
+     }
+ }

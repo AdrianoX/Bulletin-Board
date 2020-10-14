@@ -1,7 +1,9 @@
 @import "../../../styles/settings.scss";
 
+
+
 .productItem {
-  width: 100%;
+  width: 105%;
   height: 70px;
   display: flex;
   margin-bottom: 1.5rem;
@@ -29,11 +31,11 @@
 .productData {
   width: calc(100% - 70px);
   height: 50%;
-  color: $text-color-dark;
+  color: white;
   font-family: $text-font;
   & > div {
     padding: 3px 10px;
-    font-size: 0.9rem;
+    font-size: 1.4rem;
   }
 }
 
@@ -43,11 +45,13 @@
   align-items: center;
   height: 50%;
   span {
-    color: $text-color-dark;
-    font-size: 1.1rem;
+    color: white;
+    font-size: 1.4rem;
   }
   small {
-    opacity: 0.6;
+    opacity: 1.6;
+    color: white;
+    font-size: 20px;
   }
 }
 
@@ -71,8 +75,9 @@
     padding: 0 5px;
 
     span {
-      font-size: 0.9rem;
+      font-size: 1.4rem;
       line-height: 1;
+      color: white;
     }
     .icon {
       font-size: 10px;

@@ -5,7 +5,7 @@ import Container from '@material-ui/core/Container';
 import clsx from 'clsx';
 import image2 from '../../images/11.jpg';
 import Divider from '@material-ui/core/Divider';
-import WhatshotIcon from '@material-ui/icons/Whatshot';
+// import WhatshotIcon from '@material-ui/icons/Whatshot';
 import { connect } from 'react-redux';
 import { getAll } from '../../../redux/drugsRedux';
 import { fetchPublished } from '../../../redux/drugsRedux';
@@ -30,22 +30,18 @@ class Component extends React.Component {
           justify="space-evenly"
           alignItems="center"
         >
-          {/* <Grid item xs={12} sm={6}>
-            <img className={styles.leftImage} src={image} alt="drug" />
-          </Grid> */}
           <Grid item xs={12} sm={12} className={styles.TextBox}>
             <img className={styles.image} src={image2} alt="sweets" />
             <h2 className={styles.Maintext}>
-              Best drugs ...
-              <WhatshotIcon className={styles.heart} />
+              {/* <img src="https://i.postimg.cc/FH0pwm9C/333.png" alt="logo" className={styles.logo} /> */}
+              <img src="https://i.postimg.cc/MKGw1KWJ/dangerous-drug-2.png" alt="logo" className={styles.logo} />
             </h2>
-            {/* <h3 className={styles.Subtext}>Choose yours </h3> */}
           </Grid>
         </Grid>
 
         <Divider variant="middle" className={styles.divider} />
         <HomeButtons drugs={drugs} />
-        <Divider variant="middle" className={styles.divider} />
+        {/* <Divider variant="middle" className={styles.divider} /> */}
       </Container>
     );
   }

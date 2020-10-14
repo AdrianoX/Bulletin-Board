@@ -24,10 +24,11 @@ const Component = ({ cart, total }) => {
         <Button
           className={styles.shop}
           color="inherit"
-          startIcon={<AddShoppingCartIcon />}
+          startIcon={<img src="https://i.postimg.cc/fW5M0HPJ/click-basket-4.png" alt="logo" className={styles.logo} />}
+
           onClick={(e) => handleClick(e)}
         >
-           Click Click : )
+          Your drugs
         </Button>
       </div>
       {opened ? (

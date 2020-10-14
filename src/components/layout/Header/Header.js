@@ -9,6 +9,7 @@ import Typography from '@material-ui/core/Typography';
 // import Button from '@material-ui/core/Button';
 // import FingerprintIcon from '@material-ui/icons/Fingerprint';
 import manageCartStorageHOC from '../../../HOC/manageCartStorage.js/manageCartStorage';
+import background from '../../../components/images/666.jpg';
 
 
 const CartWithStorageMngmt = manageCartStorageHOC(Cart);
@@ -16,32 +17,31 @@ const CartWithStorageMngmt = manageCartStorageHOC(Cart);
 
 const Component = () => {
   return (
-    <AppBar className={styles.AppBar}>
-      <Toolbar className={styles.toolbar}>
-        {/* <Button
-          edge="start"
-          startIcon={<FingerprintIcon />}
-          className={styles.menuButton}
-          color="inherit"
-          aria-label="menu"
-        >
-          <Link to="/my-posts" className={styles.login}>
-          Mysterious button...
+    <div className="background"
+      style={{
+        backgroundImage: `url(${background})`,
+        backgroundSize: 'cover',
+      }}
+    >
+      <AppBar
+        className={styles.AppBar}
+      >
+        <Toolbar className={styles.toolbar}>
+          <img src="https://i.postimg.cc/FH0pwm9C/333.png" alt="logo" className={styles.logo} />
+          {/* <img src="https://i.postimg.cc/q7RDZ96S/dangerous-drug-1.png" alt="logo" className={styles.logo} /> */}
 
+          <Link to="/" className={styles.login}>
+            <Typography
+              align="center"
+              variant="h4"
+              className={styles.brand}>
+               MyDrugs
+            </Typography>
           </Link>
-          {<FingerprintIcon />}
-        </Button> */}
-        <Link to="/" className={styles.login}>
-          <Typography
-            align="center"
-            variant="h4"
-            className={styles.brand}>
-          MyDrugs
-          </Typography>
-        </Link>
-        <CartWithStorageMngmt />
-      </Toolbar>
-    </AppBar>
+          <CartWithStorageMngmt />
+        </Toolbar>
+      </AppBar>
+    </div>
   );
 };
 

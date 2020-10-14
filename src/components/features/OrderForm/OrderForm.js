@@ -8,6 +8,7 @@ import { unmountAfterDelay } from '../../../HOC/unmountAfterDelay.js/unmountAfte
 import { withRouter } from 'react-router-dom';
 import styles from './OrderForm.module.scss';
 import { Popup } from '../Popup/Popup';
+import Divider from '@material-ui/core/Divider';
 
 class Component extends React.Component {
 
@@ -176,12 +177,15 @@ class Component extends React.Component {
                 onChange={updateTextField}
                 id="postCode"
               />
+              <Divider variant="middle" className={styles.divider} />
             </Grid>
+            <Button
+              className={styles.button}
+              variant="contained"
+              type="submit">
+                Submit
+            </Button>
           </Grid>
-          <Button
-            className={styles.button}
-            variant="contained"
-            type="submit">Submit</Button>
         </form>
       </div>
     );

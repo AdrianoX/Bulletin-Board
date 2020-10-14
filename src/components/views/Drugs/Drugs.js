@@ -15,6 +15,7 @@ import { getDrugByOption, fetchPublished } from '../../../redux/drugsRedux';
 import { getOptionsByProducts, loadOptionsRequest } from '../../../redux/optionRedux';
 import { addToCart } from '../../../redux/cartRedux';
 import styles from './Drugs.module.scss';
+import Divider from '@material-ui/core/Divider';
 
 class Component extends React.Component  {
 
@@ -84,7 +85,7 @@ class Component extends React.Component  {
                       control=
                         {<Radio
                           className={styles.radio}
-                          style= {{color: '#584332'}} />}
+                          style= {{color: '#4682B4'}} />}
                       label={option.option} />
                   ))}
                 </RadioGroup>
@@ -106,6 +107,7 @@ class Component extends React.Component  {
               <Select options={options}/>
             </Grid>
           </Grid>
+          <Divider variant="middle" className={styles.divider} />
         </Container>
       );
     }

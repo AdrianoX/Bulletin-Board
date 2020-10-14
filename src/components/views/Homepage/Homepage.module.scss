@@ -12,6 +12,12 @@
     margin-right: 2px;
   }
 
+  .logo {
+    height: 715px;
+    top: 55px;
+    margin-top: -205px;
+  }
+
   .divider {
     margin: 3rem;
     background-color: $base-color;
@@ -31,10 +37,15 @@
       // left: -232px;
       opacity: 0.2;
       &:hover {
-        opacity: 0.6;
+        opacity: 1;
         transition: all 1s ease-in-out;
       }
     }
+    // .image:hover::before {
+    //   opacity: 1;
+    //   transform: scale(1, 1);
+    // }
+
     &:hover .Maintext {
       color: $text-color-light;
       transition: all 1s ease-in-out;

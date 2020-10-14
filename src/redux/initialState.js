@@ -181,7 +181,7 @@ export const initialState = {
         category: 'pills',
         categoryName: 'Only best Pills !',
         categoryImg: 'https://i.postimg.cc/VvqRrQ1H/R3ak9ku-TURBXy8w-YWFh-Nz-Zi-My0x-Zj-Vj-LTRm-ZTAt-OWQw-Ni03-Zm-Ew-MGYw-MDc5-NDkuan-Bl-Z5-GVAs0-DBw-DDw4-Gh-MAE.jpg',
-        productSelect: 'Type your choose...',
+        productSelect: 'Your choice is ...',
       },
       {
         _id: '2',
@@ -192,7 +192,7 @@ export const initialState = {
         price: 110,
         rate: 1,
         category: 'pills',
-        productSelect: 'Type your choose...',
+        productSelect: 'Your choice is ...',
       },
       {
         _id: '3',
@@ -203,7 +203,7 @@ export const initialState = {
         price: 135,
         rate: 1,
         category: 'pills',
-        productSelect: 'Type your choose...',
+        productSelect: 'Your choice is ...',
       },
 
       {
@@ -217,7 +217,7 @@ export const initialState = {
         category: 'ecstasy',
         categoryName: '100% oryginal Ecstasy !',
         categoryImg: 'https://i.postimg.cc/XYQskb5R/nintchdbpict000254677956.jpg',
-        productSelect: 'Type your choose...',
+        productSelect: 'Your choice is ...',
       },
       {
         _id: '5',
@@ -228,7 +228,7 @@ export const initialState = {
         price: 115,
         rate: 2,
         category: 'ecstasy',
-        productSelect: 'Type your choose...',
+        productSelect: 'Your choice is ...',
       },
       {
         _id: '6',
@@ -239,7 +239,7 @@ export const initialState = {
         price: 140,
         rate: 2,
         category: 'ecstasy',
-        productSelect: 'Type your choose...',
+        productSelect: 'Your choice is ...',
       },
 
       {
@@ -253,7 +253,7 @@ export const initialState = {
         category: 'cannabis',
         categoryName: 'Best kind of Cannabis !',
         categoryImg:'https://i.postimg.cc/bYBVK8Fp/photo-1558010089-ff6fd29ea39a.jpg',
-        productSelect: 'Type your choose...',
+        productSelect: 'Your choice is ...',
       },
       {
         _id: '8',
@@ -264,7 +264,7 @@ export const initialState = {
         price: 140,
         rate: 3,
         category: 'cannabis',
-        productSelect: 'Type your choose...',
+        productSelect: 'Your choice is ...',
       },
       {
         _id: '9',
@@ -275,7 +275,7 @@ export const initialState = {
         price: 160,
         rate: 3,
         category: 'cannabis',
-        productSelect: 'Type your choose...',
+        productSelect: 'Your choice is ...',
       },
 
 
@@ -290,7 +290,7 @@ export const initialState = {
         category: 'mushroom',
         categoryName: 'Mushrooms invasion !',
         categoryImg: 'https://i.postimg.cc/7Lpxcdgm/8171704c9fd4445cae8dc71206f07cd1-super-Jumbo.jpg',
-        productSelect: 'Type your choose...',
+        productSelect: 'Your choice is ...',
       },
       {
         _id: '11',
@@ -301,7 +301,7 @@ export const initialState = {
         price: 95,
         rate: 1,
         category: 'mushroom',
-        productSelect: 'Type your choose...',
+        productSelect: 'Your choice is ...',
       },
       {
         _id: '12',
@@ -312,7 +312,7 @@ export const initialState = {
         price: 115,
         rate: 1,
         category: 'mushroom',
-        productSelect: 'Type your choose...',
+        productSelect: 'Your choice is ...',
       },
 
 
@@ -327,7 +327,7 @@ export const initialState = {
         category: 'lsd',
         categoryName: 'LSD Looooong Trip !',
         categoryImg: 'https://i.postimg.cc/gjCDwv6Y/ef365d56-scalecrop-840x350.jpg',
-        productSelect: 'Type your choose...',
+        productSelect: 'Your choice is ...',
       },
       {
         _id: '14',
@@ -338,7 +338,7 @@ export const initialState = {
         price: 165,
         rate: 1,
         category: 'lsd',
-        productSelect: 'Type your choose...',
+        productSelect: 'Your choice is ...',
       },
       {
         _id: '15',
@@ -349,7 +349,7 @@ export const initialState = {
         price: 175,
         rate: 1,
         category: 'lsd',
-        productSelect: 'Type your choose...',
+        productSelect: 'Your choice is ...',
       },
     ],
     loading: {

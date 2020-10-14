@@ -5,7 +5,19 @@
 }
 .toolbar {
   justify-content: space-between;
+
 }
+// .toolbar .logo{
+//   height: 100%;
+// }
+// img {
+//   width: 100%;
+// }
+
+.logo {
+  height: 65px;
+}
+
 .login {
   text-decoration: none;
   color: $text-color-light;

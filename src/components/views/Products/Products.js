@@ -36,7 +36,9 @@ class Component extends React.Component {
     const { className, categoryDrugs } = this.props;
     return  (
       <Container className={clsx(className, styles.root)}>
-        <h2>{categoryDrugs[0].categoryName}</h2>
+
+        <h2>{categoryDrugs[0].categoryName}<img src="https://i.postimg.cc/bNP8rH5r/tablet-2.png" alt="logo" className={styles.logo} /></h2>
+
         <Divider variant="middle" className={styles.divider} />
         {categoryDrugs.map((drug) => (
           <div key={drug.option}>
@@ -54,12 +56,13 @@ class Component extends React.Component {
                   <Typography component="p" className={styles.description}>
                     {drug.description}
                   </Typography>
-                  <Button className={styles.button} variant="outlined" color="primary">See more</Button>
+                  <Button className={styles.button} variant="outlined" color="primary">Need more ? ; )</Button>
                   <Typography component="p">Price from: {drug.price}$</Typography>
                 </CardContent>
               </Card>
             </NavLink>
             <Divider variant="middle" className={styles.divider} />
+            {/* <Divider variant="middle" className={styles.divider} /> */}
           </div>
         ))}
       </Container>

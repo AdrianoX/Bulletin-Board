@@ -46,7 +46,6 @@ class Component extends React.Component {
             (<img key={2} className={styles.thumbImg} src={options[2].image} alt={options[2].option} />),
           ]}
         />
-
       </div>
     );
   }
