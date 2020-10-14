@@ -58,4 +58,7 @@ const mapStateToProps = (state) => ({
 
 const Container = connect(mapStateToProps, null)(Component);
 
-export { Container as OrderSummary, Component as OrderSummaryComponent };
+export {
+  Container as OrderSummary,
+  Component as OrderSummaryComponent,
+};

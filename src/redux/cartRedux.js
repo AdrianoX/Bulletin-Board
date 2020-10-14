@@ -62,8 +62,11 @@ export const loadCartRequest = () => {
     let getSavedCart;
     localStorage.getItem('cart') ?
       getSavedCart = JSON.parse(localStorage.getItem('cart')) : getSavedCart = [];
+    console.log(localStorage);
     dispatch(fetchSuccess(getSavedCart));
+
   };
+
 };
 
 /* reducer */

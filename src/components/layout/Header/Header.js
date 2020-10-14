@@ -7,16 +7,30 @@ import AppBar from '@material-ui/core/AppBar';
 import Toolbar from '@material-ui/core/Toolbar';
 import Typography from '@material-ui/core/Typography';
 // import Button from '@material-ui/core/Button';
-
+// import FingerprintIcon from '@material-ui/icons/Fingerprint';
 import manageCartStorageHOC from '../../../HOC/manageCartStorage.js/manageCartStorage';
 
 
 const CartWithStorageMngmt = manageCartStorageHOC(Cart);
+// console.log('CartWithStorageMngmt', CartWithStorageMngmt);
 
 const Component = () => {
   return (
     <AppBar className={styles.AppBar}>
       <Toolbar className={styles.toolbar}>
+        {/* <Button
+          edge="start"
+          startIcon={<FingerprintIcon />}
+          className={styles.menuButton}
+          color="inherit"
+          aria-label="menu"
+        >
+          <Link to="/my-posts" className={styles.login}>
+          Mysterious button...
+
+          </Link>
+          {<FingerprintIcon />}
+        </Button> */}
         <Link to="/" className={styles.login}>
           <Typography
             align="center"

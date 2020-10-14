@@ -32,6 +32,19 @@ const Component = ({className, drugs}) => (
           <p className={styles.textButton}>{drugs[0].categoryName}</p>
         </Grid>
       </NavLink>
+      <NavLink exact to={`/products/${drugs[9].category}`} className={styles.link}>
+        <Grid item sm={12} className={styles.Box}>
+          <img src={drugs[9].categoryImg} alt={drugs[9].category} className={styles.imageButton}/>
+          <p className={styles.textButton}>{drugs[9].categoryName}</p>
+        </Grid>
+      </NavLink>
+      <NavLink exact to={`/products/${drugs[12].category}`} className={styles.link}>
+        <Grid item sm={12} className={styles.Box}>
+          <img src={drugs[12].categoryImg} alt={drugs[12].category} className={styles.imageButton}/>
+          <p className={styles.textButton}>{drugs[12].categoryName}</p>
+        </Grid>
+      </NavLink>
+
     </Grid>
   </div>
 );
