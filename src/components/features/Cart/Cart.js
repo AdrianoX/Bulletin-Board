@@ -7,7 +7,7 @@ import { CartItem } from '../CartItem/CartItem';
 import styles from './Cart.module.scss';
 import { countProductsInCart } from '../../../utils/countProductsInCart.js';
 import Button from '@material-ui/core/Button';
-import AddShoppingCartIcon from '@material-ui/icons/AddShoppingCart';
+
 
 const Component = ({ cart, total }) => {
   const [opened, setOpened] = useState(false);

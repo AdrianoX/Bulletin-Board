@@ -14,18 +14,21 @@ const Component = ({className, drugs}) => (
       direction="row"
       justify="space-between"
       alignItems="center">
-      <NavLink exact to={`/products/${drugs[3].category}`} className={styles.firstLink}>
-        <Grid item sm={12} className={styles.Box}>
-          <img src={drugs[3].categoryImg} alt={drugs[3].category} className={styles.imageButton}/>
-          <p className={styles.textButton}>{drugs[3].categoryName}</p>
-        </Grid>
-      </NavLink>
+
       <NavLink exact to={`/products/${drugs[6].category}`} className={styles.link}>
         <Grid item sm={12} className={styles.Box}>
           <img src={drugs[6].categoryImg} alt={drugs[6].category} className={styles.imageButton}/>
           <p className={styles.textButton}>{drugs[6].categoryName}</p>
         </Grid>
       </NavLink>
+
+      <NavLink exact to={`/products/${drugs[12].category}`} className={styles.link}>
+        <Grid item sm={12} className={styles.Box}>
+          <img src={drugs[12].categoryImg} alt={drugs[12].category} className={styles.imageButton}/>
+          <p className={styles.textButton}>{drugs[12].categoryName}</p>
+        </Grid>
+      </NavLink>
+
       <NavLink exact to={`/products/${drugs[0].category}`} className={styles.link}>
         <Grid item sm={12} className={styles.Box}>
           <img src={drugs[0].categoryImg} alt={drugs[0].category} className={styles.imageButton}/>
@@ -38,12 +41,13 @@ const Component = ({className, drugs}) => (
           <p className={styles.textButton}>{drugs[9].categoryName}</p>
         </Grid>
       </NavLink>
-      <NavLink exact to={`/products/${drugs[12].category}`} className={styles.link}>
+      <NavLink exact to={`/products/${drugs[3].category}`} className={styles.firstLink}>
         <Grid item sm={12} className={styles.Box}>
-          <img src={drugs[12].categoryImg} alt={drugs[12].category} className={styles.imageButton}/>
-          <p className={styles.textButton}>{drugs[12].categoryName}</p>
+          <img src={drugs[3].categoryImg} alt={drugs[3].category} className={styles.imageButton}/>
+          <p className={styles.textButton}>{drugs[3].categoryName}</p>
         </Grid>
       </NavLink>
+
 
     </Grid>
   </div>

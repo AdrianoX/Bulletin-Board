@@ -27,8 +27,10 @@ const Component = () => {
         className={styles.AppBar}
       >
         <Toolbar className={styles.toolbar}>
-          <img src="https://i.postimg.cc/FH0pwm9C/333.png" alt="logo" className={styles.logo} />
-          {/* <img src="https://i.postimg.cc/q7RDZ96S/dangerous-drug-1.png" alt="logo" className={styles.logo} /> */}
+          <Link to="/" className={styles.login}>
+            <img src="https://i.postimg.cc/FH0pwm9C/333.png" alt="logo" className={styles.logo} />
+            {/* <img src="https://i.postimg.cc/q7RDZ96S/dangerous-drug-1.png" alt="logo" className={styles.logo} /> */}
+          </Link>
 
           <Link to="/" className={styles.login}>
             <Typography
