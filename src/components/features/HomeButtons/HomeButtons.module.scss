@@ -66,6 +66,40 @@
     width: 100%;
   }
 }
+
+@media (max-width: 768px) {
+  .textButton {
+    font-size: 10px !important;
+    left: 60px;
+    text-align: center;
+  }
+
+
+  }
+
+//   @media (min-width: 1024px) and (max-width: 1920px) {
+//   .link {
+//     width: 100%;
+//   }
+//   .textButton {
+//     font-size: 18px !important;
+//     left: 60px;
+//     text-align: center;
+//   }
+// }
+
+  // @media (min-width: 768px) and (max-width: 1024px) {
+
+  //   }
+
+  // @media (min-width: 1024px) and (max-width: 1920px) {
+  //   .textButton {
+  //     font-size: 35px !important;
+  //     left: 110px;
+  //     text-align: center;
+  //   }
+  //     }
+
 @-webkit-keyframes swing
  {
      15%
