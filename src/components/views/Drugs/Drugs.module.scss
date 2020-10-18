@@ -80,3 +80,41 @@
       }
   }
 }
+
+
+@media (max-width: 768px) {
+
+
+  .root{
+    margin-top: 0px;
+  }
+
+
+  .button{
+    margin: 1rem;
+    margin-left: 70px;
+    margin-bottom: 30px;
+  }
+
+  .divider{
+    display: none;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  .root{
+    margin-top: 150px;
+  }
+
+  body{
+    background: black;
+  }
+}
+
+@media (min-width: 1024px) and (max-width: 1366px) {
+
+  .root{
+    margin-top: 150px;
+  }
+
+}

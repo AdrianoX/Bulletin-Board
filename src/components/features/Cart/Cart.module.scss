@@ -10,7 +10,7 @@
   span {
     color: $text-color-light;
     font-weight: 100;
-    padding-right: 15px;
+
   }
   button {
     margin: 0;
@@ -41,7 +41,7 @@
 
 .cart {
   height: 100%;
-  width: 450px;
+  // width: 450px;
   transition: transform 0.5s ease;
   // background-color: dodgerblue;
   background-image: url('https://i.postimg.cc/ry9rMtSk/y685b4bo5s001.png');
@@ -75,6 +75,7 @@
       font-size: 0.9rem;
       color: $text-color-dark;
       letter-spacing: 0.1rem;
+      text-decoration: none;
     }
   }
 }
@@ -82,76 +83,76 @@
 .linkContinue {
   float: right;
   margin-top: 40px;
+  text-decoration: none;
   .button {
     width: 60%;
     background-color: $base-color;
     height: 50px;
     color: $text-color-light;
     letter-spacing: 0.1rem;
+    text-decoration: none;
     &:hover {
         background-color: lighten($color: $base-color, $amount: 5%);
     }
   }
 }
 
-// @media (max-width: 768px) {
-//   .cartlink {
-//     span {
-//       padding-right: 0px;
-//     }
-//     .logo{
-//       margin-left: 30px;
-//     }
-//   }
 
-// }
-@media (min-width: 320px) and (max-width: 569px) {
+
+//  @media (min-width: 320px) and (max-width: 568px) {
+
+//  }
+
+@media (max-width: 767px) {
+
+
+  .root{
+    height: 100%;
+  }
+
 
   .cart {
     width: 100vw;
+    margin-top: -4px;
   }
   .cartlink{
-    left: 215px;
-    top: 5px;
-    margin-left: 5px;
-  }
-
-    .cartlink {
-    span {
-      padding-right: 0px;
-    }
-    .logo{
-      margin-left: 30px;
-    }
+    // left: 215px;
+    // top: 5px;
+    // margin-left: -30px;
+    font-size: 15px;
+    margin-top: -6px;
+    margin-left: 29px;
+      button{
+        // padding-right: 65px;
+        margin-right: -25px;
+        width: 5px;
+      }
+      button p1{
+        display: none;
+      }
   }
 }
 
+@media (min-width: 768px) and (max-width: 1024px) {
+    .cart{
+      width: 450px;
+      margin-top: 9px;
+    }
+  }
 
-//  @media (min-width: 768px) and (max-width: 1024px) {
-//   .cart {
-//     width: 100vw;
-//   }
-//   .cartlink{
-//     left: 215px;
-//     top: 5px;
-//     margin-left: 5px;
-//   }
 
-//     .cartlink {
-//     span {
-//       padding-right: 0px;
-//     }
-//     .logo{
-//       margin-left: 30px;
-//     }
-//   }
+@media (min-width: 1024px) and (max-width: 1366px) {
 
-// }
+  span1{
+    font-size:25px
+  }
 
-  // @media (min-width: 768px) and (max-width: 1024px) {
+  button p1{
+    font-size: 23px;
+  }
 
-  //   }
+  .productData{
+    width: 85%;
+  }
+}
 
-  //   @media (min-width: 1024px) and (max-width: 1920px) {
-
-  //     }

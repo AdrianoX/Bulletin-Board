@@ -18,9 +18,9 @@ const Component = ({ cart, total }) => {
   return (
     <div>
       <div className={styles.cartlink}>
-        <span>
+        <span1>
           {total}$
-        </span>
+        </span1>
         <Button
           className={styles.shop}
           color="inherit"
@@ -28,7 +28,7 @@ const Component = ({ cart, total }) => {
 
           onClick={(e) => handleClick(e)}
         >
-          Your drugs
+          <p1>Your drugs</p1>
         </Button>
       </div>
       {opened ? (

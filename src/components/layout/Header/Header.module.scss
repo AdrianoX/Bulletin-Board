@@ -5,7 +5,6 @@
 }
 .toolbar {
   justify-content: space-between;
-
 }
 // .toolbar .logo{
 //   height: 100%;
@@ -33,9 +32,25 @@
 @media (max-width: 768px) {
   .brand {
     font-size: 15px;
-    margin-right: 185px;
+    margin-right: 485px;
   }
-  // .login {
-  //   display: none;
-  // }
+
+  .logo {
+    height: 35px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  .brand {
+    font-size: 35px;
+    margin-right: 400px;
+  }
+
+  @media (min-width: 1024px) and (max-width: 1366px) {
+    .brand {
+      font-size: 45px;
+      margin-right: 550px;
+
+    }
+  }
 }
