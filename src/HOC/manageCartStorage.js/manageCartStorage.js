@@ -12,17 +12,17 @@ export function manageCartStorage(Component) {
       saveCart: PropTypes.func,
       cart: PropTypes.object,
     }
-    // componentDidMount() {
-    //   this.props.loadCart();
-    // }
+    componentDidMount() {
+      this.props.loadCart();
+    }
 
     shouldComponentUpdate(prevState) {
       return prevState.cart !== this.props.cart;
     }
 
-    // componentDidUpdate() {
-    //   this.props.saveCart(this.props.cart.drugs);
-    // }
+    componentDidUpdate() {
+      this.props.saveCart(this.props.cart.drugs);
+    }
 
     render() {
       return (

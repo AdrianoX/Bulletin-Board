@@ -42,8 +42,8 @@ class Component extends React.Component {
 
     let error = null;
     if (!firstName || !lastName || !email || !address || !place || !postCode) error = 'Fill in all required fields';
-    else if (!drugs.length) error = 'Your shoping basket is empty';
-    else if (!total) error = 'Your shoping basket is empty';
+    else if (!drugs.length) error = 'Its so empty in here... why not throw something in ? : )';
+    else if (!total) error = 'Its so empty in here... why not throw something in ? : )';
     else if (!validEmail.test(email)) error = 'Invalid e-mail address';
     else if (!validAddress.test(address)) error = 'Invalid address';
     else if (!validPostCode.test(postCode)) error = 'Invalid post code';

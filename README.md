@@ -1,3 +1,14 @@
+# MyDrugs
+
+Click [here](https://my-drugss.herokuapp.com/) to go to the page.
+
+## Install & Run
+
+Run `yarn install` to install the project locally.
+Run `yarn start` in command line to run the project on development mode.
+
+Last commit: 19.10.2020 ( beta version ; ))
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
@@ -12,10 +23,6 @@ Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 The page will reload if you make edits.<br />
 You will also see any lint errors in the console.
 
-### `yarn test`
-
-Launches the test runner in the interactive watch mode.<br />
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
 ### `yarn build`
 
