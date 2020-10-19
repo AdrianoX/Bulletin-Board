@@ -34,16 +34,16 @@ class Component extends React.Component {
           onChange={this.onChange}
           className={styles.Carousel}
         >
-          <img className="img-example" src={options[value].image} alt={options[value].option} />
+          <img className="img-example" src={options[value] && options[value].image} alt={options[value] && options[value].option} />
         </Carousel>
         <Dots
           value={value}
           onChange={this.onChange}
           className={styles.thumbnails}
           thumbnails={[
-            (<img key={1} className={styles.thumbImg} src={options[0].image} alt={options[0].option} />),
-            (<img key={2} className={styles.thumbImg} src={options[1].image} alt={options[1].option} />),
-            (<img key={2} className={styles.thumbImg} src={options[2].image} alt={options[2].option} />),
+            (<img key={1} className={styles.thumbImg} src={options[0] && options[0].image} alt={options[0] && options[0].option} />),
+            (<img key={2} className={styles.thumbImg} src={options[1] && options[1].image} alt={options[1] && options[1].option} />),
+            (<img key={2} className={styles.thumbImg} src={options[2] && options[2].image} alt={options[2] && options[2].option} />),
           ]}
         />
       </div>

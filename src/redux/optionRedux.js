@@ -1,14 +1,6 @@
 import axios from 'axios';
-// export const API_URL = (process.env.NODE_ENV === 'production') ? '/api' : 'http://localhost:8000/api';
 import {API_URL} from '../config';
 
-
-// export const getOptions = ({options}) => options;
-
-// export const getOptionsByProducts = ({ options }, id ) => {
-//   const option = options.filter(opt=> opt.id === id);
-//   return option;
-// };
 
 /* selectors */
 export const getOptions = ({options}) => options.data;
@@ -39,7 +31,7 @@ export const loadOptionsRequest = () => {
   return async dispatch => {
     dispatch(fetchStarted());
     try {
-      let res = await axios.get(`${API_URL}/option`); // options or option ? <- CL
+      let res = await axios.get(`${API_URL}/option`);
       dispatch(fetchSuccess(res.data));
     } catch (err) {
       dispatch(fetchError(err.message || true));

@@ -62,7 +62,6 @@ class Component extends React.Component {
               </Card>
             </NavLink>
             <Divider variant="middle" className={styles.divider} />
-            {/* <Divider variant="middle" className={styles.divider} /> */}
           </div>
         ))}
       </Container>
@@ -82,7 +81,6 @@ const mapDispatchToProps = dispatch => ({
 const ContainerComponent = connect(mapStateToProps, mapDispatchToProps)(Component);
 
 export {
-  // Component as Products,
   ContainerComponent as Products,
   Component as ProductsComponent,
 };

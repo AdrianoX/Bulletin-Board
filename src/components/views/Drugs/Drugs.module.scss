@@ -3,9 +3,7 @@
 .root {
   margin-top: 192px;
   margin-bottom: -550px;
-  //  body{
-  //    height: 120%;
-  //  }
+
   span {
     color: white;
   }
@@ -26,7 +24,7 @@
   p {
     font-family: $text-font;
     font-weight: 600;
-    //  color: $text-color-dark;
+
     color: white;
     opacity: 0.8;
     text-align: center;
@@ -34,7 +32,6 @@
   }
   h1 {
     font-family: $header-font;
-    //  color: $text-color-dark;
     color: white;
     font-size: 3rem;
     text-align: center;
@@ -42,9 +39,7 @@
   }
   .select {
     width: 90%;
-    // height: 55%;
     margin: 2rem;
-    // color: $text-color-dark;
     color: white;
     font-family: $text-font;
   }
@@ -53,20 +48,10 @@
     color: $text-color-light;
   }
   .button {
-    // width: 65%;
-    // background-color: $base-color;
-    // height: 55px;
-    // color: $text-color-light;
-    // margin-bottom: 15px;
-    // &:hover {
-    //     background-color: lighten($color: $base-color, $amount: 10%);
-
-    // }
-
     text-transform: uppercase;
-    background: #4682B4;
+    background: #4682b4;
     padding: 20px;
-    border: 4px solid #20bf6b ;
+    border: 4px solid #20bf6b;
     border-radius: 6px;
     display: inline-block;
     transition: all 0.3s ease 0s;
@@ -75,46 +60,40 @@
       color: yellowgreen;
       border-radius: 50px;
       background: yellowgreen;
-      border-color: #494949 ;
+      border-color: #494949;
       transition: all 0.3s ease 0s;
-      }
+    }
   }
 }
 
-
 @media (max-width: 768px) {
-
-
-  .root{
+  .root {
     margin-top: 0px;
   }
 
-
-  .button{
+  .button {
     margin: 1rem;
     margin-left: 70px;
     margin-bottom: 30px;
   }
 
-  .divider{
+  .divider {
     display: none;
   }
 }
 
 @media (min-width: 768px) and (max-width: 1024px) {
-  .root{
+  .root {
     margin-top: 150px;
   }
 
-  body{
+  body {
     background: black;
   }
 }
 
 @media (min-width: 1024px) and (max-width: 1366px) {
-
-  .root{
+  .root {
     margin-top: 150px;
   }
-
 }

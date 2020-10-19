@@ -10,7 +10,6 @@
   span {
     color: $text-color-light;
     font-weight: 100;
-
   }
   button {
     margin: 0;
@@ -41,10 +40,10 @@
 
 .cart {
   height: 100%;
-  // width: 450px;
+  width: 450px;
+  margin-top: 9px;
   transition: transform 0.5s ease;
-  // background-color: dodgerblue;
-  background-image: url('https://i.postimg.cc/ry9rMtSk/y685b4bo5s001.png');
+  background-image: url("https://i.postimg.cc/ry9rMtSk/y685b4bo5s001.png");
   background-image: auto;
   padding: 40px 20px;
   box-shadow: 0px 2px 4px 0px $base-color;
@@ -56,7 +55,7 @@
   overflow: auto;
 }
 .noProducts {
-    color: $text-color-dark;
+  color: $text-color-dark;
 }
 .summary {
   p {
@@ -92,67 +91,51 @@
     letter-spacing: 0.1rem;
     text-decoration: none;
     &:hover {
-        background-color: lighten($color: $base-color, $amount: 5%);
+      background-color: lighten($color: $base-color, $amount: 5%);
     }
   }
 }
 
-
-
-//  @media (min-width: 320px) and (max-width: 568px) {
-
-//  }
-
 @media (max-width: 767px) {
-
-
-  .root{
+  .root {
     height: 100%;
   }
-
 
   .cart {
     width: 100vw;
     margin-top: -4px;
   }
-  .cartlink{
-    // left: 215px;
-    // top: 5px;
-    // margin-left: -30px;
+  .cartlink {
     font-size: 15px;
     margin-top: -6px;
     margin-left: 29px;
-      button{
-        // padding-right: 65px;
-        margin-right: -25px;
-        width: 5px;
-      }
-      button p1{
-        display: none;
-      }
+    button {
+      margin-right: -25px;
+      width: 5px;
+    }
+    button p1 {
+      display: none;
+    }
   }
 }
 
 @media (min-width: 768px) and (max-width: 1024px) {
-    .cart{
-      width: 450px;
-      margin-top: 9px;
-    }
-  }
-
-
-@media (min-width: 1024px) and (max-width: 1366px) {
-
-  span1{
-    font-size:25px
-  }
-
-  button p1{
-    font-size: 23px;
-  }
-
-  .productData{
-    width: 85%;
+  .cart {
+    width: 450px;
+    margin-top: 9px;
   }
 }
 
+@media (min-width: 1024px) and (max-width: 1366px) {
+  span1 {
+    font-size: 25px;
+  }
+
+  button p1 {
+    font-size: 23px;
+  }
+
+  .productData {
+    width: 85%;
+  }
+}

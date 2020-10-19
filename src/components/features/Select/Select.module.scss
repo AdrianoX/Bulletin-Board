@@ -4,11 +4,6 @@
     .Carousel {
         height: 65vh;
         &:hover {
-          // transform: skewX(-10deg);
-          // transform: rotate(-700deg) skew(15deg) scale(0.7);
-          // transform: rotate(360deg);
-          // border-color: #FF1654;
-          // border-radius:35%;
           -webkit-animation: swing 1s ease;
           animation: swing 1s ease;
           -webkit-animation-iteration-count: 1;

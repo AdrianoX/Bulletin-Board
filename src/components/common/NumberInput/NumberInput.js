@@ -7,7 +7,6 @@ const Component = ({ value, onChange }) => (
 
 
   <input
-    // type = "string"
     type="number"
     min="1"
     max="100"
@@ -21,7 +20,6 @@ const Component = ({ value, onChange }) => (
 Component.propTypes = {
   value: PropTypes.number,
   onChange: PropTypes.func,
-  // className: PropTypes.node,
 };
 
 export {

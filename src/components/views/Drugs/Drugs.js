@@ -130,7 +130,6 @@ const mapDispatchToProps = dispatch => ({
 const ContainerComponent = connect(mapStateToProps, mapDispatchToProps)(Component);
 
 export {
-  //  Component as Drug,
   ContainerComponent as Drugs,
   Component as DrugsComponent,
 };

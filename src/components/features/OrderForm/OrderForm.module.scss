@@ -62,7 +62,7 @@
 }
 
 @media (max-width: 768px) {
-  .root{
+  .root {
     margin-top: 55px;
   }
 
@@ -79,7 +79,7 @@
 }
 
 @media (min-width: 768px) and (max-width: 1024px) {
-  .root{
+  .root {
     margin-top: 55px;
   }
 
@@ -96,15 +96,14 @@
 }
 
 @media (min-width: 1024px) and (max-width: 1366px) {
-  .root{
+  .root {
     margin-top: 330px;
 
-    .button{
+    .button {
       left: 315px;
     }
-    .divider{
+    .divider {
       margin-top: 55px;
     }
-
   }
 }
