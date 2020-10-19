@@ -6,6 +6,8 @@ import {API_URL} from '../config';
 /* selectors */
 export const getAll = ({drugs}) => drugs.data;
 
+export const getLoadingState = ({ drugs }) =>drugs.loading;
+
 export const getDrugsByCategory = ({ drugs }, id ) => {
   const categoryDrugs = drugs.data.filter(drug => drug.category === id);
   return categoryDrugs;

@@ -112,7 +112,9 @@
 
       }
       .BoardImg {
-        display: none;
+        // display: none;
+        width: 100%;
+        height: 100%;
 
       }
     }
@@ -131,11 +133,32 @@
 
     }
 
+    p{
+      margin: -5px 0 !important;
+    }
+
     .logo{
       display: none;
     }
-
-
-
   }
 }
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  .Card {
+    display: flex;
+    flex-direction: column;
+    margin: 10px 0;
+    justify-content: center;
+    width: 85vw;
+    .Content {
+      width: 100%;
+      height: 100%;
+
+    }
+    .BoardImg {
+      width: 100%;
+
+    }
+  }
+}
+
