@@ -2,6 +2,10 @@
 
 Click [here](https://my-drugss.herokuapp.com/) to go to the page.
 
+This project was created to practise frontend and backend skills gained during Kodilla WebDeveloper bootcamp.
+
+It is a very simple version of a shop where you can personalize products in your cart. Personalization currently is limited to description of client's preferences.
+
 ## Install & Run
 
 Run `yarn install` to install the project locally.
